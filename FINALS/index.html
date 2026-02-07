@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EGM Dental Clinic | Affordable & Quality Dental Care</title>
+  <meta name="description" content="EGM Dental Clinic offers quality braces, cleaning, and root canals at affordable prices in Mabalacat City.">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/index-style.css">
+</head>
+<body>
+
+  <canvas id="bgCanvas"></canvas>
+
+  <button id="scrollTopBtn" title="Go to top">
+    <i class="bi bi-arrow-up-short"></i>
+  </button>
+
+  <nav class="navbar navbar-expand-lg bg-white py-3 sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="#">EGM Dental Clinic</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto gap-lg-4 text-center align-items-center">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+        </ul>
+        
+        <div class="d-flex flex-column flex-lg-row gap-2 mt-3 mt-lg-0 ms-lg-4 align-items-center">
+            <a href="login.html" class="btn btn-outline-green">SIGN UP / LOGIN</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-4" id="home">
+    <div class="hero-card shadow-sm reveal">
+      <div class="row align-items-center g-4">
+        <div class="col-12 col-lg-6 text-center text-lg-start">
+          <h1 class="hero-title">
+            QUALITY & <span class="text-highlight">AFFORDABLE CARE</span>
+          </h1>
+          <p class="text-secondary mt-3 lead">EGM Dental Clinic offers quality dental care at an affordable price.</p>
+          
+          <div class="clinic-hours-box my-4">
+            <p class="mb-0 small text-muted text-uppercase fw-bold">Clinic Hours:</p>
+            <p class="mb-0 fw-bold fs-5">10:00 AM - 5:00 PM</p>
+            <small class="text-muted">Monday to Sunday (except Thursday)</small>
+          </div>
+          
+          <div class="mt-4">
+            <button class="btn btn-book w-100 w-sm-auto px-5 py-3" onclick="window.location.href='appointment.html'">BOOK APPOINTMENT</button>
+          </div>
+        </div>
+        
+        <div class="col-12 col-md-6 col-lg-3 text-center">
+          <div id="threeJsContainer"></div>
+        </div>
+        
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="d-flex flex-column gap-4 align-items-center align-items-lg-start ps-lg-4">
+            <div class="d-flex align-items-center gap-3">
+              <div class="bg-blue-custom text-white rounded-circle icon-box shadow-sm">
+                <i class="bi bi-geo-alt-fill"></i>
+              </div>
+              <div><small class="text-muted d-block fw-bold">Location</small><strong>Mabalacat City</strong></div>
+            </div>
+            <div class="d-flex align-items-center gap-3">
+              <div class="bg-blue-custom text-white rounded-circle icon-box shadow-sm">
+                <i class="bi bi-telephone-fill"></i>
+              </div>
+              <div><small class="text-muted d-block fw-bold">Call Us</small><strong>09912345678</strong></div>
+            </div>
+            <div class="d-flex align-items-center gap-3">
+              <div class="bg-blue-custom text-white rounded-circle icon-box shadow-sm">
+                <i class="bi bi-person-badge-fill"></i>
+              </div>
+              <div><small class="text-muted d-block fw-bold">Dentist</small><strong>Dr. Emil Manalaysay</strong></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="container my-5 py-5 reveal">
+    <div class="process-header text-center mb-5">
+      <p class="text-muted small fw-bold text-uppercase letter-spacing-1">FAQs About the Rules and Process</p>
+      <h2 class="fw-bold">Appointment and Scheduling Process</h2>
+    </div>
+
+    <div class="row text-center g-4 px-lg-5">
+      <div class="col-12 col-sm-6 col-md-3 px-4">
+        <div class="svg-wrapper mb-3 shadow-sm">
+          <i class="bi bi-calendar-check-fill text-highlight fs-1"></i>
+        </div>
+        <strong class="d-block mt-3">Book Appointment</strong>
+        <p class="small text-muted mt-2">Schedule your visit easily online or at the clinic with a few simple steps.</p>
+      </div>
+      <div class="col-12 col-sm-6 col-md-3 px-4">
+        <div class="svg-wrapper mb-3 shadow-sm">
+          <i class="bi bi-person-check-fill text-highlight fs-1"></i>
+        </div>
+        <strong class="d-block mt-3">Approval Confirmation</strong>
+        <p class="small text-muted mt-2">We review your request and confirm your schedule as soon as possible.</p>
+      </div>
+      <div class="col-12 col-sm-6 col-md-3 px-4">
+        <div class="svg-wrapper mb-3 shadow-sm">
+          <i class="bi bi-clock-fill text-highlight fs-1"></i>
+        </div>
+        <strong class="d-block mt-3">Come at Right Time</strong>
+        <p class="small text-muted mt-2">Arrive on time so we can provide smooth and proper dental service.</p>
+      </div>
+      <div class="col-12 col-sm-6 col-md-3 px-4">
+        <div class="svg-wrapper mb-3 shadow-sm">
+          <i class="bi bi-heart-pulse-fill text-highlight fs-1"></i>
+        </div>
+        <strong class="d-block mt-3">Get Treated</strong>
+        <p class="small text-muted mt-2">Receive professional care and treatment from our experienced dental team.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container py-5 reveal" id="services">
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center mb-5 gap-3">
+      <h2 class="fw-bold m-0">Services</h2>
+      <button class="btn btn-book" onclick="window.location.href='appointment.html'">BOOK APPOINTMENT</button>
+    </div>
+    <div class="row g-4">
+      
+      <div class="col-12 col-md-4">
+        <div class="service-card h-100 bg-light-blue shadow-sm">
+          <div class="service-icon-large mb-4">
+            <img src="assets/images/braces.png" class="img-fluid" alt="Dental Braces">
+          </div>
+          <h3>Dental Braces</h3>
+          <p class="small text-muted mt-3 mb-4">High-quality orthodontic braces to align and straighten teeth for a perfect smile.</p>
+          <a href="#" class="btn btn-pill-outline-blue">Learn More</a>
+        </div>
+      </div>
+      
+      <div class="col-12 col-md-4">
+        <div class="service-card h-100 bg-light-green shadow-sm">
+          <div class="service-icon-large mb-4">
+             <img src="assets/images/teeth 1.png" class="img-fluid" alt="Teeth Cleaning">
+          </div>
+          <h3>Teeth Cleaning</h3>
+          <p class="small text-muted mt-3 mb-4">Thorough cleaning and prophylaxis to remove plaque and ensure gum health.</p>
+          <a href="#" class="btn btn-pill-outline-blue">Learn More</a>
+        </div>
+      </div>
+      
+      <div class="col-12 col-md-4">
+        <div class="service-card h-100 bg-light-beige shadow-sm">
+          <div class="service-icon-large mb-4">
+             <img src="assets/images/root-canal 1.png" class="img-fluid" alt="Root Canal">
+          </div>
+          <h3>Root Canal</h3>
+          <p class="small text-muted mt-3 mb-4">Advanced endodontic therapy to save decayed teeth and relieve pain effectively.</p>
+          <a href="#" class="btn btn-pill-outline-blue">Learn More</a>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <section class="container py-5 reveal" id="reviews">
+    <div class="text-center mb-5">
+      <p class="text-muted small fw-bold text-uppercase letter-spacing-1">Testimonials</p>
+      <h2 class="fw-bold">What Our Patients Say</h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="review-card p-4 h-100 bg-white shadow-sm rounded-4">
+          <div class="text-warning mb-3"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+          <p class="fst-italic text-muted">"Dr. Emil is the best! I was so scared of the dentist but the root canal was painless. Highly recommended."</p>
+          <div class="d-flex align-items-center mt-3">
+            <div class="bg-blue-custom rounded-circle text-white d-flex align-items-center justify-content-center fw-bold" style="width: 40px; height: 40px;">M</div>
+            <div class="ms-3">
+              <h6 class="mb-0 fw-bold">Maria Santos</h6>
+              <small class="text-muted">Patient</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="review-card p-4 h-100 bg-white shadow-sm rounded-4">
+          <div class="text-warning mb-3"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+          <p class="fst-italic text-muted">"Very affordable prices compared to other clinics in Pampanga. The clinic is clean and modern."</p>
+          <div class="d-flex align-items-center mt-3">
+            <div class="bg-green-custom rounded-circle text-white d-flex align-items-center justify-content-center fw-bold" style="width: 40px; height: 40px;">J</div>
+            <div class="ms-3">
+              <h6 class="mb-0 fw-bold">Juan Cruz</h6>
+              <small class="text-muted">Patient</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="review-card p-4 h-100 bg-white shadow-sm rounded-4">
+          <div class="text-warning mb-3"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+          <p class="fst-italic text-muted">"My braces journey has been smooth. The staff are very friendly and scheduling is easy."</p>
+          <div class="d-flex align-items-center mt-3">
+            <div class="bg-gold-custom rounded-circle text-white d-flex align-items-center justify-content-center fw-bold" style="width: 40px; height: 40px;">A</div>
+            <div class="ms-3">
+              <h6 class="mb-0 fw-bold">Angela D.</h6>
+              <small class="text-muted">Patient</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container py-5 reveal" id="contact">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold display-6">Get in Touch</h2>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-lg-6">
+        <div class="row g-4 h-100">
+          <div class="col-12 col-sm-6">
+            <div class="contact-card shadow-sm">
+              <div class="contact-icon-circle bg-blue-custom shadow-sm">
+                <i class="bi bi-telephone-fill"></i>
+              </div>
+              <h4>Call Us</h4>
+              <p>09912345678</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6">
+            <div class="contact-card shadow-sm">
+              <div class="contact-icon-circle bg-green-custom shadow-sm">
+                <i class="bi bi-envelope-fill"></i>
+              </div>
+              <h4>Email Us</h4>
+              <p>egm@dental.com</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6">
+            <div class="contact-card shadow-sm">
+              <div class="contact-icon-circle bg-gold-custom shadow-sm">
+                <i class="bi bi-geo-alt-fill"></i>
+              </div>
+              <h4>Visit Us</h4>
+              <p class="small text-muted">Mabalacat City, Pampanga</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6">
+            <div class="contact-card shadow-sm">
+              <div class="contact-icon-circle bg-blue-custom shadow-sm">
+                <i class="bi bi-chat-dots-fill"></i>
+              </div>
+              <h4>Chat with Us</h4>
+              <p>24/7 Support</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+    <div class="feedback-container shadow-sm border-0 h-100">
+        <h4 class="fw-bold mb-4">Give Us Feedback</h4>
+        <form id="feedbackForm" novalidate>
+            <!-- Name Field -->
+            <div class="mb-3">
+                <label class="form-label fw-bold small">Full Name</label>
+                <input type="text" id="fbName" class="form-control bg-light border-0 py-3" placeholder="Enter your name">
+                <small class="error-message text-danger" id="fbNameError"></small>
+            </div>
+
+            <!-- Email Field -->
+            <div class="mb-3">
+                <label class="form-label fw-bold small">Email Address</label>
+                <input type="email" id="fbEmail" class="form-control bg-light border-0 py-3" placeholder="Enter your email">
+                <small class="error-message text-danger" id="fbEmailError"></small>
+            </div>
+
+            <!-- Message Field -->
+            <div class="mb-3">
+                <label class="form-label fw-bold small">Message</label>
+                <textarea id="fbMsg" class="form-control bg-light border-0 py-3" rows="5" placeholder="How can we help?"></textarea>
+                <small class="error-message text-danger" id="fbMsgError"></small>
+            </div>
+
+            <button type="submit" class="btn btn-submit-feedback w-100 py-3 mt-2 shadow-sm">Submit Feedback</button>
+        </form>
+    </div>
+</div>
+  </section>
+
+  <footer class="bg-white border-top pt-5 pb-3 reveal">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <a class="navbar-brand fs-4 mb-3 d-block" href="#">EGM Dental Clinic</a>
+          <p class="text-muted small">Providing affordable and high-quality dental care to the Mabalacat community since 2010. Your smile is our priority.</p>
+          <div class="d-flex gap-3 mt-3">
+            <a href="#" class="text-secondary fs-5"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-secondary fs-5"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-secondary fs-5"><i class="bi bi-twitter-x"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-6">
+          <h6 class="fw-bold mb-3">Quick Links</h6>
+          <ul class="list-unstyled text-muted small d-flex flex-column gap-2">
+            <li><a href="#home" class="text-decoration-none text-muted">Home</a></li>
+            <li><a href="#services" class="text-decoration-none text-muted">Services</a></li>
+            <li><a href="#reviews" class="text-decoration-none text-muted">Reviews</a></li>
+            <li><a href="#contact" class="text-decoration-none text-muted">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-6">
+          <h6 class="fw-bold mb-3">Services</h6>
+          <ul class="list-unstyled text-muted small d-flex flex-column gap-2">
+            <li>Braces</li>
+            <li>Teeth Cleaning</li>
+            <li>Root Canal</li>
+            <li>Extraction</li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <h6 class="fw-bold mb-3">Visit Us</h6>
+          <p class="text-muted small mb-2"><i class="bi bi-geo-alt-fill text-primary me-2"></i> RMM Bldg, Mabalacat City, Pampanga</p>
+          <p class="text-muted small mb-2"><i class="bi bi-telephone-fill text-primary me-2"></i> 09912345678</p>
+          <p class="text-muted small"><i class="bi bi-envelope-fill text-primary me-2"></i> egm@dental.com</p>
+        </div>
+      </div>
+      <hr class="my-4">
+      <div class="text-center text-muted small">
+        <p class="mb-0">© 2026 EGM Dental Clinic • All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="importmap"> { "imports": { "three": "https://unpkg.com/three@0.160.0/build/three.module.js" } } </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="module" src="js/index-main.js"></script>
+
+</body>
+</html>

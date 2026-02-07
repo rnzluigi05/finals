@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EGM Dental Clinic - Sign Up</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/signup-style.css">
+</head>
+<body>
+    <div class="container-fluid p-0">
+        <div class="row g-0">
+            <!-- Left Section: Doctor Image & Social Links -->
+            <div class="col-12 col-lg-6 left">
+                <div class="doctor">
+                    <img src="assets/images/Dental Doctor.png" alt="Doctor">
+                </div>
+                <div class="socials d-none d-lg-flex">
+                    <button class="social-btn">
+                        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    </button>
+                    <button class="social-btn">
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </button>
+                    <button class="social-btn">
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Right Section: Signup Form -->
+            <div class="col-12 col-lg-6 right">
+                <div class="form-box">
+                    <div class="form-title">
+                        <p><span style="color: #17a2b8;">EGM</span> Dental Clinic</p>
+                        <h1>Sign Up</h1>
+                    </div>
+
+                    <form id="signupForm">
+                        <!-- Name Fields -->
+                        <div class="row mb-3">
+                            <div class="col-sm-6 mb-3 mb-sm-0">
+                                <label class="form-label">First Name:</label>
+                                <input type="text" id="firstNameInput" class="form-control" placeholder="Juan">
+                                <small class="error-message text-danger" id="firstNameError"></small>
+                            </div>
+                            <div class="col-sm-6">
+                                <label class="form-label">Last Name:</label>
+                                <input type="text" id="lastNameInput" class="form-control" placeholder="Dela Cruz">
+                                <small class="error-message text-danger" id="lastNameError"></small>
+                            </div>
+                        </div>
+
+                        <!-- Email Field -->
+                        <div class="mb-3">
+                            <label class="form-label">Email:</label>
+                            <input type="email" id="emailInput" class="form-control" placeholder="juan@example.com">
+                            <small class="error-message text-danger" id="emailError"></small>
+                        </div>
+
+                        <!-- Password Fields -->
+                        <div class="row mb-3">
+                            <div class="col-sm-6 mb-3 mb-sm-0">
+                                <label class="form-label">Password:</label>
+                                <input type="password" id="passwordInput" class="form-control" placeholder="Create a password">
+                                <small class="error-message text-danger" id="passwordError"></small>
+                            </div>
+                            <div class="col-sm-6">
+                                <label class="form-label">Confirm Password:</label>
+                                <input type="password" id="confirmPasswordInput" class="form-control" placeholder="Confirm password">
+                                <small class="error-message text-danger" id="confirmPasswordError"></small>
+                            </div>
+                        </div>
+
+                        <!-- Birthdate & Gender Fields -->
+                        <div class="row mb-3">
+                            <div class="col-sm-6 mb-3 mb-sm-0">
+                                <label class="form-label">Birthdate:</label>
+                                <input type="date" id="birthdateInput" class="form-control">
+                                <small class="error-message text-danger" id="birthdateError"></small>
+                            </div>
+                            <div class="col-sm-6">
+                                <label class="form-label">Gender:</label>
+                                <select id="genderInput" class="form-select">
+                                    <option value="" disabled selected>Select Gender</option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                                <small class="error-message text-danger" id="genderError"></small>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn-submit">Create Account</button>
+                    </form>
+
+                    <!-- Login Redirect -->
+                    <div class="login-redirect">
+                        Already have an Account? <a href="login.html">Log in.</a>
+                    </div>
+
+                    <!-- Social Login Options -->
+                    <div class="divider"><span>OR</span></div>
+                    <div class="row g-2">
+                        <div class="col-12 col-sm-6">
+                            <button type="button" class="btn social-login-btn w-100">
+                                <img src="assets/images/google.png" alt="Google"> Google
+                            </button>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <button type="button" class="btn social-login-btn w-100">
+                                <img src="assets/images/facebook.png" alt="Facebook"> Facebook
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Success Modal -->
+    <div class="modal fade" id="successModal" tabindex="-1" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body text-center py-5">
+                    <div class="success-icon mb-4">
+                        <i class="bi bi-check-circle-fill text-success" style="font-size: 5rem;"></i>
+                    </div>
+                    <h3 class="mb-3">Account Created Successfully!</h3>
+                    <p class="text-muted mb-4">Welcome to EGM Dental Clinic. You will be redirected to the login page shortly.</p>
+                    <div class="spinner-border text-info" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="js/signup-main.js"></script>
+</body>
+</html>
